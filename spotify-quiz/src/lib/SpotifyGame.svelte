@@ -5,7 +5,7 @@
   
     // Spotify Web API konfiguration
     const CLIENT_ID = '2f447864907247b0b6cf278270612262'; // Erstatt med din Client ID
-    let REDIRECT_URI = 'https://danielsorby.no';
+    let REDIRECT_URI = 'https://test-eksamen-rho.vercel.app/';
     const SCOPES = 'streaming user-read-email user-read-private';
   
     // Game state
