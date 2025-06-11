@@ -2,6 +2,7 @@
 <script>
     import { onMount } from 'svelte';
     import { browser } from '$app/environment';
+	import { goto } from '$app/navigation';
   
     // Spotify Web API konfiguration
     const CLIENT_ID = '2f447864907247b0b6cf278270612262'; // Erstatt med din Client ID
@@ -56,6 +57,7 @@
           console.log('Redirecting to Spotify authentication...');
           console.log('Auth URL:', authUrl);
       window.location.href = authUrl;
+      goto(REDIRECT_URI); // Naviger til redirect URI etter autentisering
       
     }
   
