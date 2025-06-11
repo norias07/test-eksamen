@@ -55,10 +55,8 @@
           `scope=${encodeURIComponent(SCOPES)}`;
       
           console.log('Redirecting to Spotify authentication...');
-          console.log('Auth URL:', authUrl);
-      /* window.location.href = authUrl;
-      goto(REDIRECT_URI); // Naviger til redirect URI etter autentisering */
-      
+      window.location.href = authUrl;
+ 
     }
   
     function setGameMode(mode) {
