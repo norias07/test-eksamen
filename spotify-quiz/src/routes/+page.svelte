@@ -1,8 +1,14 @@
 <!-- src/routes/+page.svelte -->
 <script>
-    import SpotifyGame from '$lib/SpotifyGame.svelte';
+    import SpotifyGame from '../lib/SpotifyGame.svelte';
+    import { loginWithSpotify } from '$lib/spotify';
+    function handleLogin() {
+        loginWithSpotify();
+    }
   </script>
-  
+<button on:click={handleLogin}>
+    Koble til Spotify
+  </button>
   <svelte:head>
     <title>Spotify Musikkgjettelek</title>
     <meta name="description" content="Test musikkkunnskapene dine med Spotify sin API!" />

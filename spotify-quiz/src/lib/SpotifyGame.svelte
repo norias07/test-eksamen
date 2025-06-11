@@ -230,7 +230,7 @@
     <h1>🎵 Spotify Musikkgjettelek</h1>
     
     {#if !gameStarted}
-      <div class="setup-section">
+      <div class="setup-section"></div>
         <div class="auth-section">
           <h3>Koble til Spotify</h3>
           <p>For å spille trenger du å koble til Spotify-kontoen din</p>
